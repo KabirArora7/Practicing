@@ -21,9 +21,8 @@ const port = 3000
 
 app.get("/" , (req, res) =>{
     const dayType = checkDay(dayIdx)
-    const data = {
-        dayType: dayType};
-    res.render("/Users/kabir/Desktop/Web Dev/EJS/4.0 EJS/views" , data)
+    const data = {dayType: dayType};
+    res.render("index.ejs" , data)
 } )
 
 
